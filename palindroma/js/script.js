@@ -2,6 +2,15 @@
 // Chiedere all’utente di inserire una parola
 // Creare una funzione per capire se la parola inserita è palindroma
 
+const userText = prompt("inserisci una parola/frase e saprai se è palindroma");
+
+let result = checkPalindroma(userText);
+
+// stampo il risultato
+console.log("la frase è palindroma?", result);
+document.getElementById('message').innerHTML += `La frase/parola <br>${userText}<br> è palindroma? <br> ${result}`;
+
+
 /**FUNCTIONS
  * 
  * Descrizione: la funzione riceve come input una parola e dà come output true se è palindroma e false se non lo è.
@@ -30,7 +39,7 @@ function checkPalindroma (stringa) {
 }
 
 // TEST
-let giusta = checkPalindroma("i topi non avevano nipoti");
-console.log(giusta);
-let sbagliata = checkPalindroma ("frase non palindroma");
-console.log(sbagliata);
+// let giusta = checkPalindroma("i topi non avevano nipoti");
+// console.log(giusta);
+// let sbagliata = checkPalindroma ("frase non palindroma");
+// console.log(sbagliata);
