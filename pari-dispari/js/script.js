@@ -10,10 +10,10 @@
 
 /**
  * Descrizione: la funzione genera un numero da 1 a 5 e lo dà come output.
- * @returns {any} numero da 1 a 5.
+ * @returns {number} numero da 1 a 5.
  */
 function randomNumber1to5 () {
-
+    const randomGenerated = Math.floor(Math.random() *5) +1;
     return randomGenerated;
 }
 
@@ -27,3 +27,8 @@ function pariDispari (num1, num2) {
 
     return oddOrEven;
 }
+
+// TEST
+const testRandom = randomNumber1to5 ();
+console.log(testRandom);
+
