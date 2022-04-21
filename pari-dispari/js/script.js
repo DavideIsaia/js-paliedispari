@@ -5,11 +5,24 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
-const userChoice = prompt("Scegli pari o dispari");
-console.log("hai scelto", userChoice);
+let userChoice;
+let userNumber;
 
-const userNumber = parseInt(prompt("Scegli un numero da 1 a 5"));
-console.log("il tuo numero è", userNumber);
+// chiedo pari o dispari
+do {
+    userChoice = prompt("Scegli pari o dispari");
+    console.log("hai scelto", userChoice);
+
+// finchè non viene scritta una di queste due parole
+} while (["pari", "dispari"].indexOf(userChoice) === -1);
+
+// chiedo un numero da 1 a 5
+do {
+    userNumber = parseInt(prompt("Scegli un numero da 1 a 5"));
+    console.log("il tuo numero è", userNumber);
+
+// finchè non è un numero compreso tra 1 e 5
+} while (userNumber < 1 || userNumber > 5)
 
 const pcNumber = randomNumber1to5();
 console.log("il numero del PC è", pcNumber);
