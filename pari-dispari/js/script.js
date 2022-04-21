@@ -21,14 +21,27 @@ function randomNumber1to5 () {
  * Descrizione: la funzione somma 2 numeri e ci dice se il risultato è pari o dispari.
  * @param {number} num1 1° numero da sommare.
  * @param {number} num2 2° numero da sommare.
- * @returns {number} pari o dispari.
+ * @returns {number} oddOrEven pari o dispari.
  */
 function pariDispari (num1, num2) {
+    const somma = num1 + num2;
+    let oddOrEven;
+
+    if (somma % 2 === 0) {
+        oddOrEven = "pari";        
+    } else {
+        oddOrEven = "dispari";
+    }
 
     return oddOrEven;
 }
 
 // TEST
-const testRandom = randomNumber1to5 ();
-console.log(testRandom);
+// const testRandom = randomNumber1to5 ();
+// console.log(testRandom);
 
+// const testPari = pariDispari (1,1);
+// console.log(testPari);
+
+// const testDispari = pariDispari (1,2);
+// console.log(testDispari);
