@@ -33,9 +33,9 @@ function checkPalindroma (stringa) {
         if (stringa[i] !== stringa[stringa.length - i - 1]) {
             palindroma = false;
         }
-
-    return palindroma;
     }
+    
+    return palindroma;
 }
 
 // TEST
