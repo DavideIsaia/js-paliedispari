@@ -5,6 +5,25 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+const userChoice = prompt("Scegli pari o dispari");
+console.log("hai scelto", userChoice);
+
+const userNumber = parseInt(prompt("Scegli un numero da 1 a 5"));
+console.log("il tuo numero è", userNumber);
+
+const pcNumber = randomNumber1to5();
+console.log("il numero del PC è", pcNumber);
+
+// sommo il numero inserito dall'utente e il numero generato casualmente
+// e dico se il risultato è pari o dispari.
+const sommaPariDispari = pariDispari (userNumber, pcNumber);
+console.log("la somma del tuo numero con quello del PC è", sommaPariDispari);
+
+if (sommaPariDispari === userChoice) {
+    console.log("Hai vinto!");
+} else {
+    console.log("Ha vinto il PC.");
+}
 
 // FUNCTIONS
 
