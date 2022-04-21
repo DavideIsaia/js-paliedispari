@@ -22,7 +22,7 @@ do {
     console.log("il tuo numero è", userNumber);
 
 // finchè non è un numero compreso tra 1 e 5
-} while (userNumber < 1 || userNumber > 5)
+} while (userNumber < 1 || userNumber > 5);
 
 const pcNumber = randomNumber1to5();
 console.log("il numero del PC è", pcNumber);
@@ -32,11 +32,20 @@ console.log("il numero del PC è", pcNumber);
 const sommaPariDispari = pariDispari (userNumber, pcNumber);
 console.log("la somma del tuo numero con quello del PC è", sommaPariDispari);
 
+// imposto le variabili per dichiarare il vincitore
+let win = "Hai vinto!";
+let lose = "Ha vinto il PC.";
+let result;
+
 if (sommaPariDispari === userChoice) {
-    console.log("Hai vinto!");
+    result = win;
 } else {
-    console.log("Ha vinto il PC.");
+    result = lose;
 }
+
+// stampo il risultato in console e in pagina
+console.log(result);
+document.getElementById('message').innerHTML = `Hai scelto ${userChoice} e il numero ${userNumber}.<br> Il PC ha lanciato ${pcNumber} e la somma dei vostri numeri è ${sommaPariDispari}.<br>${result}`;
 
 // FUNCTIONS
 
