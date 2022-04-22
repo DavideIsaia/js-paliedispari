@@ -14,12 +14,12 @@ document.getElementById('message').innerHTML += `La frase/parola <br>${userText}
 /**FUNCTIONS
  * 
  * Descrizione: la funzione riceve come input una parola e dà come output true se è palindroma e false se non lo è.
- * @param {any} stringa parola o frase con spazi (funziona anche con cifre).
+ * @param {any} stringa parola o frase senza spazi (funziona anche con cifre).
  * @returns {any} true o false.
  */
 function checkPalindroma (stringa) {
 
-    // definisco la lunghezza della stringa, dividendola per 2
+    // definisco la lunghezza dei cicli, dimezzando la lunghezza della stringa
     let lunghezza = Math.floor(stringa.length / 2);
 
     // variabile di default per scrivere un solo return
@@ -39,7 +39,7 @@ function checkPalindroma (stringa) {
 }
 
 // TEST
-// let giusta = checkPalindroma("i topi non avevano nipoti");
+// let giusta = checkPalindroma("itopinonavevanonipoti");
 // console.log(giusta);
-// let sbagliata = checkPalindroma ("frase non palindroma");
+// let sbagliata = checkPalindroma ("frasenonpalindroma");
 // console.log(sbagliata);
