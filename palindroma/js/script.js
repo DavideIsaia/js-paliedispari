@@ -19,7 +19,7 @@ document.getElementById('message').innerHTML += `La frase/parola <br>${userText}
  */
 function checkPalindroma (stringa) {
 
-    // definisco la lunghezza della stringa, dividendola per 2
+    // definisco la lunghezza dei cicli, dimezzando la lunghezza della stringa
     let lunghezza = Math.floor(stringa.length / 2);
 
     // variabile di default per scrivere un solo return
