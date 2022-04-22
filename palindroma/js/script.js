@@ -14,7 +14,7 @@ document.getElementById('message').innerHTML += `La frase/parola <br>${userText}
 /**FUNCTIONS
  * 
  * Descrizione: la funzione riceve come input una parola e dà come output true se è palindroma e false se non lo è.
- * @param {any} stringa parola o frase con spazi (funziona anche con cifre).
+ * @param {any} stringa parola o frase senza spazi (funziona anche con cifre).
  * @returns {any} true o false.
  */
 function checkPalindroma (stringa) {
